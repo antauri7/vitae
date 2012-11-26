@@ -1,0 +1,312 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+html{
+	background:#2875a4;
+	height:100%;
+	width:100%;
+	font-size:13px;
+}
+html.cssgradients{
+
+	background-attachment:fixed;
+	
+	background-image: -webkit-gradient(
+	    linear,
+	    left top,
+	    left bottom,
+	    color-stop(0, rgba(0,0,0,0)),
+	    color-stop(1, rgba(0,0,0,0.5))
+	),-webkit-gradient(
+		radial,
+		50% 30%, 0, 
+		50% 30%, 800, 
+		from(rgba(0,0,0,0)), 
+		to(rgba(0,0,0,0.5))
+	),url(../img/noise.png);
+	
+	background-image: -moz-linear-gradient(
+		top, 
+		rgba(0,0,0,0) 0%, 
+		rgba(0,0,0,0.2) 70%, 
+		rgba(0,0,0,0.5) 100%
+	),-moz-radial-gradient(
+		50% 60px 45deg,
+		circle farthest-side,
+		rgba(0,0,0,0) 0%,
+		rgba(0,0,0,0.5) 100%
+	),url(../img/noise.png);
+	
+	background-image: -o-linear-gradient(
+		top, 
+		rgba(0,0,0,0) 0%,
+		rgba(0,0,0,0.5) 100%
+	),url(../img/noise.png);
+
+	background-image: linear-gradient(
+		top, 
+		rgba(0,0,0,0) 0%,
+		rgba(0,0,0,0.5) 100%
+	),radial-gradient(
+		50% 30% 45deg,
+		circle farthest-side,
+		rgba(0,0,0,0) 0%,
+		rgba(0,0,0,0.5) 100%
+	),url(../img/noise.png);
+}
+html.no-cssgradients, html.no-multiplebgs{
+	background:#2875a4 url(../img/noise-gradient.png) repeat-x;
+}
+* html.no-cssgradients{
+	background:#2875a4;
+}
+#container{ /*Aqui cambia lo del contenido de la pagina*/
+	width:990px;
+	margin:20px auto 20px;
+	padding:20px;
+	min-height:700px;
+}
+a{
+	color:inherit;
+	text-decoration: none;
+}
+header{
+	padding-top:20px;
+	/*background:url(../img/stompfrog.png) 455px 2px no-repeat;*/
+}
+* html header{
+	background:none;
+}
+header h1{
+	font-size:5.7em;
+	text-transform: uppercase;
+    color: #FFF;
+  	-moz-transition-property: color, text-shadow;
+	-moz-transition-duration: 0.8s;
+  	-webkit-transition-property: color, text-shadow;
+	-webkit-transition-duration: 0.8s;
+	font-weight:bold;
+}
+header h1 span{
+	font-family: 'cabin sketch', helvetica, arial, tahoma, serif;
+	color:#fff;
+}
+.rgba header h1 span{
+    color: rgba(255,255,255,0.7);
+  	-moz-transition-property: color, text-shadow;
+	-moz-transition-duration: 0.8s;
+  	-webkit-transition-property: color, text-shadow;
+	-webkit-transition-duration: 0.8s;
+}
+.rgba header h1 span:hover, .rgba header h1.on span{
+    color: rgb(255,255,255);
+  	-moz-transition-property: color, text-shadow;
+	-moz-transition-duration: 0.8s;
+  	-webkit-transition-property: color, text-shadow;
+	-webkit-transition-duration: 0.8s;
+}
+.textshadow header h1 span:hover, .textshadow header h1 span.on, .textshadow header h1.on span{
+	color: #FFF;
+    text-shadow:0 0 60px #FFF, 0 0 10px #FFF;  	
+    -moz-transition-property: color, text-shadow;
+	-moz-transition-duration: 0.8s;
+  	-webkit-transition-property: color, text-shadow;
+	-webkit-transition-duration: 0.8s;
+}
+#main a{
+	border-radius:6px;
+	-moz-transition: background-color linear 0.3s;
+	white-space: nowrap;
+	color:#fff;
+	text-decoration: underline;
+}
+.rgba #main a{
+	text-decoration: none;
+	padding:0 6px;
+	background: rgba(0,0,0,0.15);
+}
+.no-rgba #main a{
+	text-decoration: none;
+	padding:0 6px;
+	background:url(../img/trans-bg.png);
+}
+.rgba #main a:hover{
+	background: rgba(0,0,0,0.4);
+}
+.no-rgba #main a:hover{
+	background:url(../img/trans-bg.png) 0 100px;
+}
+* html #main a{
+	background:none!important;
+	text-decoration:underline;
+	padding:0!important;
+}
+* html #main a:hover{
+	background:none!important;
+	text-decoration:none;
+}
+#main{
+	font-family: 'helvetica neue', arial, serif;
+	margin-top:10px;
+	border-top:1px solid #fff;
+	box-shadow:0 -1px 0 rgba(0,0,0,0.2);
+	padding-top:30px;
+	font-size:1.1em;
+	color:#fff;
+	line-height: 160%;
+}
+.rgba #main{
+	border-top:1px solid rgba(255,255,255,0.2);
+    color: rgba(255,255,255,0.7);
+}
+p{
+	padding-bottom:1em;
+}
+#main .button{
+	border:5px solid rgba(0,0,0,0.4);
+	border-radius:8px;
+	display:block;
+	margin-top:30px;
+}
+#main .button a{
+	border-radius:0;
+	padding:8px 10px;
+	display:block;
+	text-align: center;
+	font-family: 'cabin sketch', 'ulta', 'The Girl Next Door', arial, serif;
+	font-size:2.0em;
+}
+.rgba #main .button a{
+    color: rgba(255,255,255,0.7);
+}
+#main .button a:hover{
+	background: rgba(0,0,0,0.15);
+	color: #FFF;
+    text-shadow:0 0 60px #FFF, 0 0 10px #FFF;  	
+    -moz-transition-property: color, text-shadow;
+	-moz-transition-duration: 0.8s;
+  	-webkit-transition-property: color, text-shadow;
+	-webkit-transition-duration: 0.8s;
+}
+.column{
+	float:left;
+	margin-right:20px;
+	width:485px;
+	text-align: justify;
+}
+.column-last{
+	margin-right:0;
+}
+aside{
+	font-family: 'helvetica neue', arial, serif;
+	margin-top:40px;
+	border-top:1px solid #fff;
+	box-shadow:0 -1px 0 rgba(0,0,0,0.2);
+	padding-top:30px;
+	font-size:0.9em;
+	line-height: 160%;
+	color:#fff;
+}
+.rgba aside{
+	border-top:1px solid rgba(255,255,255,0.2);
+    color: rgba(255,255,255,0.4);
+}
+aside h1{
+	font-size:1.0em;
+	margin-bottom:0.2em;
+    color: rgba(255,255,255,0.25);
+}
+aside p{
+	font-style:italic;
+}
+.no-rgba .rgba, 
+.no-borderradius .borderradius,  
+.no-cssgradients .cssgradients,  
+.no-multiplebgs .multiplebgs,  
+.no-boxshadow .boxshadow,  
+.no-textshadow .textshadow{
+   text-decoration: line-through;
+}
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+/* Smaller laptop/desktop screens ----------- */
+@media only screen 
+and (max-width : 640px) 
+and (min-width : 0px) {
+	header h1{
+		font-size: 4.0em
+	}
+	header{
+		background-position:50% 0;
+		padding-top:100px;
+		text-align: center;
+	}
+	.column{
+		margin:0;
+		padding:0;
+		float:0;
+		width:100%;
+	}
+	#container{
+		width:90%;
+		margin:0;
+	}
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	html{
+		background:#2875a4;
+		background-image: url(../img/noise-gradient.png) repeat-x;
+	}
+	header h1 span{
+	/* 	font-family: Helvetica, arial, sans-serif; */
+	}
+	header h1{
+		font-size: 3.4em
+	}
+	.column{
+		margin:0;
+		padding:0;
+		float:0;
+		width:100%;
+	}
+	#container{
+		width:90%;
+		margin:0;
+	}
+	header{
+		padding:0;
+		background:none;
+	}
+	#main .button{
+		display:none;
+	}
+	#main{
+		font-size:1.25em;
+	}
+	aside{
+		display:none;
+	}
+}
